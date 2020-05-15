@@ -1,0 +1,35 @@
+# PrOgRaMs
+/*
+SWAPPING OF TWO NUMBERS call by value
+*/
+import java.io.*;
+import java.util.Scanner;
+
+class Program { 
+  
+    
+    public static void main(String args[]) throws IOException 
+    { 
+         Scanner sc = new Scanner(System.in);
+        //System.out.print("Input a number : ");
+         int x=sc.nextInt();
+         int y=sc.nextInt();
+         int c=swap(x,y);
+         
+         //System.out.println("value of x: "+x);
+         //System.out.println("value of y: "+y);
+         
+     }
+    public static int swap(int x,int y)
+    { 
+        int t;
+        t=x;
+        x=y;
+        y=t;
+        System.out.println("value of x: "+x);
+        System.out.println("value of y: "+y);
+        
+        return 0;
+    }
+   
+}
