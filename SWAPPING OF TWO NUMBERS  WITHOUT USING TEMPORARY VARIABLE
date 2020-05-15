@@ -1,0 +1,25 @@
+# PrOgRaMs
+/*
+SWAPPING OF TWO NUMBERS  WITHOUT USING TEMPORARY VARIABLE
+*/
+import java.io.*;
+import java.util.Scanner;
+
+class Program { 
+  
+    
+    public static void main(String args[]) throws IOException 
+    { 
+         Scanner sc = new Scanner(System.in);
+        //System.out.print("Input a number : ");
+        int x=sc.nextInt();
+         int y=sc.nextInt();
+         
+        x=x+y;
+        y=x-y;
+        x=x-y;
+         System.out.println("value of x: "+x);
+         System.out.println("value of y: "+y);
+         
+     } 
+}
