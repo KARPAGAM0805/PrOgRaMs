@@ -1,0 +1,29 @@
+/*
+armstrong number
+*/
+import java.util.*;
+import java.util.Scanner;
+class Program 
+{  
+   public static void main(String args[])  
+   {  
+      Scanner sc=new Scanner(System.in); 
+      int no=sc.nextInt();
+      int temp=no;
+      int c=0;
+      while(no>0){
+          int a=no%10;
+          no=no/10;
+          c=c+(a*a*a);
+      }
+      
+      if(temp==c){
+          System.out.println("Armstrong Number");
+          
+      } 
+       else
+          System.out.println("Not an Armstrong Number");
+      
+   } 
+   
+}  
