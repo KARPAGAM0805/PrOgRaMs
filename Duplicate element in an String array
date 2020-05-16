@@ -1,0 +1,26 @@
+# PrOgRaMs
+/*
+Duplicate element in an String array
+*/
+import java.util.*;
+import java.util.Scanner;
+public class Sri {
+  public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in);
+       String[] names={"apple","sri","apple","mango"};
+       
+                  
+      for (int i=0;i<names.length;i++){
+      for(int j=i+1;j<names.length;j++){
+      if(names[i]==names[j]){
+      System.out.println(names[j]);
+      }
+      }
+      }
+         
+    
+   
+       
+    }
+    
+}
