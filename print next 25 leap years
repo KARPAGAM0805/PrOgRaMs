@@ -1,0 +1,85 @@
+# PrOgRaMs
+/*
+Print next 25 leap years
+*/
+import java.util.*;
+import java.util.Scanner;
+public class Sri {
+    public static int leapyear(int year){
+        if(year%4==0){
+            if(year%100==0){
+                if(year%400==0)
+                {
+                    return year;
+                }
+                
+                else
+                {
+                System.out.println("the given year is not a leap year"+year);
+                return 0;
+                 }
+            }
+            else
+            {
+               return year;
+            }
+        }
+         else
+        { 
+                System.out.println("the given year is not a leap year"+year);
+                return 0;
+                }
+        
+    }
+  public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in);
+       int count=0;
+       int year=sc.nextInt();
+       int check=leapyear(year);
+       if(check!=0){
+           System.out.println("thegiven year is leap year"+year);
+           for(int i=year;i<=year+100;i=i+4){
+               System.out.println(i);
+           }
+       }
+       if(check==0){
+           System.out.println("the given year is not a leap year"+year);
+           
+           int yearplusone=leapyear(year+1);
+           int yearplustwo=leapyear(year+2);
+           int yearplusthree=leapyear(year+3);
+
+           
+           
+           if(yearplusone!=0){
+           System.out.println("thegiven year is leap year"+yearplusone);
+           for(int i=yearplusone;i<=yearplusone+100;i=i+4){
+               System.out.println(i);
+               
+           }
+          }
+           
+       
+             if(yearplustwo!=0){
+           System.out.println("thegiven year is leap year"+yearplustwo);
+           for(int i=yearplustwo;i<=yearplustwo+100;i=i+4){
+               System.out.println(i);
+               
+           }
+          }
+       
+             
+             if(yearplusthree!=0){
+           System.out.println("thegiven year is leap year"+yearplusthree);
+           for(int i=yearplusthree;i<=yearplusthree+100;i=i+4){
+               System.out.println(i);
+               
+           }
+          }
+       
+       
+       
+      
+      }
+  }
+}
