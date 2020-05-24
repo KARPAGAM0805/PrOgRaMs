@@ -1,0 +1,33 @@
+# PrOgRaMs
+/*
+  the number of relatively prime in a given range
+
+*/
+import java.util.Scanner;
+public class Sri
+{ 
+  public static int gcd(int i,int no){
+      while(i!=no){
+          if(i>no)
+              i=i-no;
+          else
+              no=no-i;
+          
+      }
+    return no; 
+  }  
+    public static void main(String args[]) 
+    { 
+       Scanner sc=new Scanner(System.in); 
+       int no=sc.nextInt();
+       int result,count=0;
+       for(int i=1;i<=no;i++){
+          result=gcd(i,no);
+          if(result==1){
+              count=count+1;
+              
+          }
+       }
+        System.out.println(count);
+}
+}
