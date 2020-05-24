@@ -1,0 +1,37 @@
+# PrOgRaMs
+/*
+  Relativelyprime or not
+
+*/
+import java.util.Scanner;
+public class Sri
+{ 
+    
+    public static void main(String args[]) 
+    { 
+       Scanner sc=new Scanner(System.in); 
+       int no1=sc.nextInt();
+       int no2=sc.nextInt();
+       int n1=no1;
+       int n2=no2;
+       int gcd,count=0;
+       
+       while(no1!=no2){
+           if(no1>no2)
+               no1=no1-no2;
+           else
+               no2=no2-no1;
+       }
+       gcd=no2;
+       System.out.println("the gcd is"+no2);
+       if(gcd==1){
+           System.out.println("RElatively prime "+ n1+" ,"+ n2);
+           //count=count+1;
+       }
+       else{
+           System.out.println("not relatively prime  "+n1+" ,"+n2);
+       }
+        
+        } 
+    
+    } 
